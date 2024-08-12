@@ -36,12 +36,12 @@ function PromiseRacePolyfill(promises) {
   });
 }
 
-const promiseAnyPolyfil = new PromiseRacePolyfill([
+const promiseRacePolyfil = new PromiseRacePolyfill([
   importantAction("Santoshi"),
   likeTheVideo("Javascript interview questions"),
   shareTheVideo("Javascript interview questions"),
 ]);
 
-promiseAnyPolyfil
+promiseRacePolyfil
   .then((res) => console.log(res))
   .catch((err) => console.log(err));
